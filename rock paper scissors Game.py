@@ -1,4 +1,4 @@
-import random, sys
+import random, sys, time
 
 while True:
     print("Klassic(1) or A Computer Plays for you(2)?")
@@ -13,11 +13,11 @@ while True:
     print(" ")
 
 print("")
-print("What number do you want have to have to win?")
-print("If you okay with 5, tip nothing just press enter")
+print("How many points do you want to play for?")
+print("If you okay with 3, tip nothing just press enter")
 y = input()
 if y == "":
-    x = 5
+    x = 3
 else:
     x = int(y)
     print(" ")
@@ -101,3 +101,5 @@ elif losses > wins:
     print("You Lost this Battel")
 else:
     print("Ties?")
+
+time.sleep(10)
